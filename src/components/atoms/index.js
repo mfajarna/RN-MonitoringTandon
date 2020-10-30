@@ -6,6 +6,7 @@ import GrafikData from './GrafikData';
 import LokasiTandon from './LokasiTandon';
 import BtnSend from './BtnSend';
 import StatusMonitoring from './StatusMonitoring';
+import JadwalLokasiTandon from './JadwalLokasiTandon';
 
 export {
   Button,
@@ -16,4 +17,5 @@ export {
   LokasiTandon,
   BtnSend,
   StatusMonitoring,
+  JadwalLokasiTandon,
 };

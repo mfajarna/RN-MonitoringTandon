@@ -3,7 +3,7 @@ import {StyleSheet, Text, View} from 'react-native';
 import {TouchableOpacity} from 'react-native-gesture-handler';
 import {ICCeklis, ICError, ICSuccess, ICWarning} from '../../../assets/icon';
 
-const LokasiTandon = ({type}) => {
+const JadwalLokasiTandon = ({type}) => {
   const Icon = () => {
     if (type === 'Ceklis') {
       return <ICSuccess />;
@@ -14,7 +14,7 @@ const LokasiTandon = ({type}) => {
     return <ICError />;
   };
   return (
-    <TouchableOpacity style={styles.container}>
+    <View style={styles.container}>
       <View style={styles.wrapper}>
         <Text style={styles.title}>Kp. Sukapura Desa Mekarjaya </Text>
         <View style={styles.wrapperLogo}>
@@ -22,11 +22,11 @@ const LokasiTandon = ({type}) => {
         </View>
       </View>
       <Text style={styles.desc}>kekeruhan : 200</Text>
-    </TouchableOpacity>
+    </View>
   );
 };
 
-export default LokasiTandon;
+export default JadwalLokasiTandon;
 
 const styles = StyleSheet.create({
   container: {

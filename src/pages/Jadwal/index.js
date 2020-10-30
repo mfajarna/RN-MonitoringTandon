@@ -2,7 +2,7 @@ import React from 'react';
 import {StyleSheet, Text, View} from 'react-native';
 import {ScrollView} from 'react-native-gesture-handler';
 import {ILTime} from '../../assets/illustration';
-import {Input, LokasiTandon} from '../../components/atoms';
+import {Input, JadwalLokasiTandon, LokasiTandon} from '../../components/atoms';
 import Header from '../../components/molecules/Header';
 
 const Jadwal = () => {
@@ -15,13 +15,13 @@ const Jadwal = () => {
       <Text style={styles.title}>Jadwal Pembersihan Bulan Maret :</Text>
       <ScrollView>
         <View style={styles.content}>
-          <LokasiTandon />
-          <LokasiTandon />
-          <LokasiTandon type="Ceklis" />
-          <LokasiTandon />
-          <LokasiTandon type="Ceklis" />
-          <LokasiTandon />
-          <LokasiTandon />
+          <JadwalLokasiTandon />
+          <JadwalLokasiTandon />
+          <JadwalLokasiTandon type="Ceklis" />
+          <JadwalLokasiTandon />
+          <JadwalLokasiTandon type="Ceklis" />
+          <JadwalLokasiTandon />
+          <JadwalLokasiTandon />
         </View>
       </ScrollView>
     </View>

@@ -13,16 +13,18 @@ const GetStarted = ({navigation}) => {
         </View>
       </View>
       <View style={styles.wrapper2}>
-        <View style={styles.content}>
-          <Text style={styles.desc}>let's connect</Text>
-          <Text style={styles.desc2}>with tandon monitoring</Text>
-          <Text style={styles.desc3}>
-            monitoring application at each location
-          </Text>
-          <Button
-            title="Let's Start"
-            onPress={() => navigation.navigate('Login')}
-          />
+        <View style={styles.wraps}>
+          <View style={styles.content}>
+            <Text style={styles.desc}>let's connect</Text>
+            <Text style={styles.desc2}>with tandon monitoring</Text>
+            <Text style={styles.desc3}>
+              monitoring application at each location
+            </Text>
+            <Button
+              title="Let's Start"
+              onPress={() => navigation.navigate('Login')}
+            />
+          </View>
         </View>
       </View>
     </View>
@@ -53,13 +55,13 @@ const styles = StyleSheet.create({
   },
   content: {
     backgroundColor: '#2B3695',
-    height: 400,
     borderTopLeftRadius: 100,
     alignItems: 'center',
+    height: 400,
   },
   desc: {
     color: 'white',
-    marginTop: 85,
+    marginTop: 45,
     fontSize: 26,
     fontWeight: '800',
     fontFamily: 'Assistant-Bold',

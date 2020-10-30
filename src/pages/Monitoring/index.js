@@ -1,13 +1,18 @@
 import React from 'react';
 import {StyleSheet, Text, View} from 'react-native';
 import {ICArrowBack} from '../../assets/icon';
-import {Button, Gap, Header, StatusMonitoring} from '../../components';
+import {Arrow, Button, Gap, Header, StatusMonitoring} from '../../components';
 
 const Monitoring = ({navigation}) => {
   return (
     <View style={styles.container}>
       <Header type="Monitoring" />
-      <ICArrowBack style={styles.arrow} />
+      <View style={styles.arrow}>
+        <Arrow
+          style={styles.arrow}
+          onPress={() => navigation.navigate('Lokasi')}
+        />
+      </View>
       <View style={styles.content}>
         <View style={styles.indikator}>
           <View style={styles.boxIndikator}>
@@ -51,7 +56,7 @@ const Monitoring = ({navigation}) => {
         <View style={styles.button}>
           <Button
             title="Konfirmasi"
-            onPress={() => navigation.navigate('Lokasi')}
+            onPress={() => navigation.navigate('Sukses')}
           />
         </View>
       </View>
@@ -71,7 +76,7 @@ const styles = StyleSheet.create({
   },
   arrow: {
     marginTop: -45,
-    marginLeft: 18,
+    marginLeft: 10,
   },
   content: {
     paddingHorizontal: 19,

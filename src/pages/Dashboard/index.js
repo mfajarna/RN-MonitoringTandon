@@ -2,7 +2,11 @@ import React from 'react';
 import {StyleSheet, Text, View} from 'react-native';
 import {ScrollView, TextInput} from 'react-native-gesture-handler';
 import {ILGrafik} from '../../assets/illustration';
-import {GrafikData, LokasiTandon} from '../../components/atoms';
+import {
+  GrafikData,
+  JadwalLokasiTandon,
+  LokasiTandon,
+} from '../../components/atoms';
 import Header from '../../components/molecules/Header';
 
 const Dashboard = () => {
@@ -22,9 +26,9 @@ const Dashboard = () => {
         <View style={styles.content}>
           <View>
             <View style={styles.cardTandon}>
-              <LokasiTandon />
-              <LokasiTandon />
-              <LokasiTandon />
+              <JadwalLokasiTandon />
+              <JadwalLokasiTandon />
+              <JadwalLokasiTandon />
             </View>
             <Text style={styles.textAll}>Lihat Selengkapnya ...</Text>
           </View>

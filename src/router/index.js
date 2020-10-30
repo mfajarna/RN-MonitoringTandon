@@ -39,7 +39,7 @@ const Router = () => {
         options={{headerShown: false}}
       />
       <Stack.Screen
-        name="Dashboard"
+        name="Home"
         component={Dashboard}
         options={{headerShown: false}}
       />
