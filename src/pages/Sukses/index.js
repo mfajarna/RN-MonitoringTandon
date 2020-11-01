@@ -19,7 +19,7 @@ const Sukses = ({navigation}) => {
           <Text style={styles.desc2}>
             Dan Sudah Mengkonfirmasi Ke pelanggan
           </Text>
-          <Button title="Home" onPress={() => navigation.navigate('Lokasi')} />
+          <Button title="Home" onPress={() => navigation.navigate('Home')} />
         </View>
       </View>
     </View>

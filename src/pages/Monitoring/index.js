@@ -59,7 +59,7 @@ const Monitoring = ({navigation}) => {
         <View style={styles.button}>
           <Button
             title="Konfirmasi"
-            onPress={() => navigation.navigate('Home')}
+            onPress={() => navigation.navigate('Sukses')}
           />
         </View>
       </View>
