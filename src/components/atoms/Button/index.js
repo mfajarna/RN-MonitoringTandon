@@ -1,10 +1,10 @@
 import React from 'react';
 import {StyleSheet, Text, TouchableOpacity, View} from 'react-native';
 
-const Button = ({title, onPress}) => {
+const Button = ({type, title, onPress}) => {
   return (
-    <TouchableOpacity style={styles.container} onPress={onPress}>
-      <Text style={styles.text}>{title}</Text>
+    <TouchableOpacity style={styles.container(type)} onPress={onPress}>
+      <Text style={styles.text(type)}>{title}</Text>
     </TouchableOpacity>
   );
 };
@@ -12,17 +12,17 @@ const Button = ({title, onPress}) => {
 export default Button;
 
 const styles = StyleSheet.create({
-  container: {
-    backgroundColor: '#E75B74',
+  container: (type) => ({
+    backgroundColor: type === 'Register' ? '#FFFFFF' : '#E75B74',
     borderRadius: 10,
     paddingVertical: 13,
     width: 157,
-  },
-  text: {
+  }),
+  text: (type) => ({
     fontSize: 20,
-    color: 'white',
+    color: type === 'Register' ? '#E75B74' : 'white',
     textAlign: 'center',
     fontWeight: '800',
     fontFamily: 'Assistant-Bold',
-  },
+  }),
 });

@@ -1,7 +1,7 @@
 import React from 'react';
 import {View, Text, StyleSheet} from 'react-native';
 import {ILLogo} from '../../assets/illustration';
-import {Button, Gap, Input} from '../../components/atoms';
+import {Button, Gap, Input, Link} from '../../components/atoms';
 
 const Login = ({navigation}) => {
   return (
@@ -19,12 +19,19 @@ const Login = ({navigation}) => {
       </View>
       <View style={styles.bottom}>
         <View style={styles.bottom2}>
+          <Gap height={50} />
           <View style={styles.button}>
             <Button
               title="Login"
               onPress={() => navigation.replace('MainApp')}
             />
           </View>
+          <Gap height={14} />
+          <Button
+            title="Register"
+            type="Register"
+            onPress={() => navigation.replace('Register')}
+          />
         </View>
       </View>
     </View>
@@ -36,15 +43,15 @@ export default Login;
 const styles = StyleSheet.create({
   page: {
     padding: 32,
-    height: 500,
+    height: 410,
     backgroundColor: 'white',
     borderBottomRightRadius: 50,
   },
   title: {
     fontSize: 22,
     fontFamily: 'Assistant-SemiBold',
-    marginTop: 40,
-    marginBottom: 60,
+    marginTop: 30,
+    marginBottom: 30,
     maxWidth: 170,
   },
   input: {
@@ -66,5 +73,9 @@ const styles = StyleSheet.create({
   },
   button: {
     marginTop: -150,
+  },
+  text: {
+    fontSize: 16,
+    fontFamily: 'Assistant-Regular',
   },
 });

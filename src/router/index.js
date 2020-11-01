@@ -8,6 +8,7 @@ import {
   Lokasi,
   Monitoring,
   Sukses,
+  Register,
 } from '../pages';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import {ButtonNavigator} from '../components';
@@ -39,11 +40,6 @@ const Router = () => {
         options={{headerShown: false}}
       />
       <Stack.Screen
-        name="Home"
-        component={Dashboard}
-        options={{headerShown: false}}
-      />
-      <Stack.Screen
         name="MainApp"
         component={MainApp}
         options={{headerShown: false}}
@@ -56,6 +52,11 @@ const Router = () => {
       <Stack.Screen
         name="Monitoring"
         component={Monitoring}
+        options={{headerShown: false}}
+      />
+      <Stack.Screen
+        name="Register"
+        component={Register}
         options={{headerShown: false}}
       />
     </Stack.Navigator>

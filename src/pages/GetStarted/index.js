@@ -35,7 +35,7 @@ export default GetStarted;
 
 const styles = StyleSheet.create({
   background: {
-    height: 360,
+    height: 330,
     alignItems: 'center',
     backgroundColor: '#F3F7FF',
     borderBottomRightRadius: 100,

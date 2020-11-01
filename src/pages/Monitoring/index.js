@@ -1,7 +1,14 @@
 import React from 'react';
 import {StyleSheet, Text, View} from 'react-native';
 import {ICArrowBack} from '../../assets/icon';
-import {Arrow, Button, Gap, Header, StatusMonitoring} from '../../components';
+import {
+  Arrow,
+  Button,
+  Gap,
+  Header,
+  Indikator,
+  StatusMonitoring,
+} from '../../components';
 
 const Monitoring = ({navigation}) => {
   return (
@@ -17,11 +24,7 @@ const Monitoring = ({navigation}) => {
         <View style={styles.indikator}>
           <View style={styles.boxIndikator}>
             <Text style={styles.title}>Indikator :</Text>
-            <View style={styles.keterangan}>
-              <Text style={styles.keteranganIndikator}>
-                Air Dalam Keadaan Bersih
-              </Text>
-            </View>
+            <Indikator type="Bersih" />
             <Text style={styles.title}>Keterangan :</Text>
             <Gap height={6} />
             <View style={styles.warnaKeterangan}>
@@ -56,7 +59,7 @@ const Monitoring = ({navigation}) => {
         <View style={styles.button}>
           <Button
             title="Konfirmasi"
-            onPress={() => navigation.navigate('Sukses')}
+            onPress={() => navigation.navigate('Home')}
           />
         </View>
       </View>
