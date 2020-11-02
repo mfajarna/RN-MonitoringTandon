@@ -27,6 +27,11 @@ const Login = ({navigation}) => {
             />
           </View>
           <Gap height={14} />
+          <Button
+            title="Register"
+            type="Register"
+            onPress={() => navigation.replace('Register')}
+          />
         </View>
       </View>
     </View>

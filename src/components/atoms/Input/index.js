@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import {StyleSheet, Text, View} from 'react-native';
 import {TextInput} from 'react-native-gesture-handler';
 
-const Input = ({type}) => {
+const Input = ({type, value, onChangeText, secureTextEntry}) => {
   const [border, setBorder] = useState('#C7D9ED');
   const onFocusForm = () => {
     setBorder('#2B3695');
@@ -16,7 +16,10 @@ const Input = ({type}) => {
       <TextInput
         onFocus={onFocusForm}
         onBlur={onBlurForm}
-        style={styles.input(border)}></TextInput>
+        style={styles.input(border)}
+        value={value}
+        onChangeText={onChangeText}
+        secureTextEntry={secureTextEntry}></TextInput>
     </View>
   );
 };

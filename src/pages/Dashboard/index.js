@@ -22,7 +22,7 @@ const Dashboard = () => {
         <GrafikData status="KOTOR" />
       </View>
       <Text style={styles.desc}>Lokasi Tandon Kotor :</Text>
-      <ScrollView>
+      <ScrollView showsVerticalScrollIndicator={false}>
         <View style={styles.content}>
           <View>
             <View style={styles.cardTandon}>
