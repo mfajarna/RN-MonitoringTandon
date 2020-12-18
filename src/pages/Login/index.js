@@ -14,6 +14,7 @@ const Login = ({navigation}) => {
             <Input type="Username" />
             <Gap height={19} />
             <Input type="Password" />
+            <Gap height={19} />
           </View>
         </View>
       </View>
@@ -43,7 +44,7 @@ export default Login;
 const styles = StyleSheet.create({
   page: {
     padding: 32,
-    height: 410,
+    height: 420,
     backgroundColor: 'white',
     borderBottomRightRadius: 50,
   },
@@ -62,17 +63,16 @@ const styles = StyleSheet.create({
   },
   bottom: {
     backgroundColor: 'white',
-    height: 300,
   },
   bottom2: {
     backgroundColor: '#223694',
     alignItems: 'center',
     justifyContent: 'center',
     borderTopLeftRadius: 50,
-    height: 300,
+    height: 500,
   },
   button: {
-    marginTop: -150,
+    marginTop: -300,
   },
   text: {
     fontSize: 16,
